@@ -1,6 +1,6 @@
 # Het verhaal van Aina
 
-<!-- Aangeleverde tekst, letterlijk overgenomen. Nog niet verwerkt in verhaal.html. -->
+<!-- Aangeleverde tekst, letterlijk overgenomen. Verwerkt in verhaal.html. -->
 
 **Ons verhaal**
 
