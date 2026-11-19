@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Assortiment | Smaak van Brazilië</title>
+<meta name="description" content="Alle Braziliaanse hapjes, gerechten, taarten, bonbons en cateringopties van Smaak van Brazilië, met actuele beschikbaarheid.">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Mr+Dafoe&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="notice" hidden></div>
+<header class="nav">
+  <div class="wrap">
+    <a class='brand' href='/'><img src="img/logo.jpg" alt=""><span>smaak van Brazilië</span></a>
+    <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul class="menu" id="menu">
+      <li><a href='/verhaal'>Ons verhaal</a></li>
+      <li><a href='/assortiment'>Assortiment</a></li>
+      <li><a href='/taarten'>Taarten</a></li>
+      <li><a href='/catering'>Catering &amp; events</a></li>
+      <li><a href='/bestellen'>Bestellen</a></li>
+      <li><a class='btn btn-primary' href='/bestellen#formulier'>Bestel nu</a></li>
+    </ul>
+  </div>
+</header>
+<section class="page-head">
+  <div class="wrap">
+    <span class="script">O cardápio</span>
+    <h1>Assortiment</h1>
+    <p class="lead">Alles wat Aina maakt, op één plek. Het aanbod wisselt met het seizoen en de agenda. Wat als "Nu bestelbaar" staat, kun je direct aanvragen. Prijzen hoor je bij je aanvraag.</p>
+    <div class="filter">
+      <button type="button" data-filter="alle" class="on">Alles</button>
+      <button type="button" data-filter="hapjes">Hapjes</button>
+      <button type="button" data-filter="gerechten">Gerechten</button>
+      <button type="button" data-filter="taarten">Taarten</button>
+      <button type="button" data-filter="doces">Bonbons &amp; zoet</button>
+      <button type="button" data-filter="catering">Catering</button>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top:24px">
+  <div class="wrap" id="assortiment"></div>
+</section>
+<section class="section band">
+  <div class="wrap contact-grid">
+    <div class="stack">
+      <span class="eyebrow">Goed om te weten</span>
+      <h2>Bestellen en bewaren</h2>
+      <p class="lead" data-site="bestelTermijn"></p>
+      <p>Hapjes kun je vers afhalen of als diepvriesproduct bestellen om thuis af te bakken. De baktijd staat op de verpakking. Taarten blijven 2 tot 3 dagen goed in de koelkast.</p>
+    </div>
+    <div class="stack">
+      <span class="eyebrow">Tijdelijk niet bestelbaar</span>
+      <ul class="pill-list" id="tijdelijk-niet"></ul>
+      <p class="hint">Wil je een seintje wanneer iets terug is? Stuur een berichtje via WhatsApp.</p>
+      <div><a class='btn btn-primary' href='/bestellen#formulier'>Bestel nu</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class='brand' href='/'><img src="img/logo.jpg" alt=""><span>smaak van Brazilië</span></a>
+      <p class="tagline">Se é bom, é Brasil</p>
+      <p style="margin-top:10px;font-size:.93rem;color:#D9C9B2">Braziliaanse hapjes, gerechten, taarten en bonbons uit Groningen. Gemaakt door Aina, met liefde en veel smaak.</p>
+    </div>
+    <div>
+      <h4>Ontdek</h4>
+      <ul>
+        <li><a href='/verhaal'>Ons verhaal</a></li>
+        <li><a href='/assortiment'>Assortiment</a></li>
+        <li><a href='/taarten'>Taarten</a></li>
+        <li><a href='/catering'>Catering &amp; events</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Bestellen</h4>
+      <ul>
+        <li><a href='/bestellen'>Hoe bestel je</a></li>
+        <li><a href='/bestellen#verzending'>Verzending met PostNL</a></li>
+        <li><a href='/catering#restaurantdagen'>Restaurantdagen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a data-href="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp: <span data-site="telefoon"></span></a></li>
+        <li><a data-href="email" href="#"><span data-site="email"></span></a></li>
+        <li><a data-href="instagram" href="#" target="_blank" rel="noopener">@<span data-site="instagram"></span></a></li>
+        <li><span data-site="plaats"></span></li>
+      </ul>
+    </div>
+    <div class="legal"><span>© <span data-year></span> Smaak van Brazilië</span><span>KvK en btw-nummer: volgt</span></div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
