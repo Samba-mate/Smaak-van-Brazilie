@@ -18,6 +18,8 @@
   --leaf:      #3E7A4F;
   --dark:      #4E7FA0;   /* donkere banden zijn nu blauw */
   --dark-fg:   #F4EFD3;
+  --surface:   #FBF8E8;   /* kaarten, formulier */
+  --muted-on-dark: #D9C9B2; /* zachte tekst op donkere banden en footer */
 
   --f-display: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --f-body:    "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -134,7 +136,7 @@ p{margin:0}
 
 /* ---- Product cards ---- */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
-.card{display:grid;grid-template-rows:auto 1fr;background:#FBF8E8;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.card{display:grid;grid-template-rows:auto 1fr;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 .card .ph{aspect-ratio:4/3;background:var(--bg-2);display:grid;place-items:center;overflow:hidden}
 .card .ph img{width:100%;height:100%;object-fit:cover}
 .card .ph .noimg{font-family:var(--f-script);color:var(--accent);font-size:1.6rem;opacity:.7}
@@ -173,7 +175,7 @@ p{margin:0}
 
 /* ---- Steps / info ---- */
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:s}
-.step{background:#FBF8E8;border:1px solid var(--line);border-radius:var(--r);padding:22px;display:grid;gap:10px;align-content:start}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:grid;gap:10px;align-content:start}
 .step h3{display:flex;align-items:center;gap:12px}
 .step h3::before{counter-increment:s;content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--yellow);color:var(--ink);display:grid;place-items:center;font-size:.85rem;letter-spacing:0;flex:none;font-weight:500}
 .step p{color:var(--ink-2);font-size:.97rem}
@@ -182,7 +184,7 @@ p{margin:0}
 .info{border-left:3px solid var(--yellow);padding-left:16px;display:grid;gap:6px}
 .info h3{font-size:1.1rem}
 .info p{color:var(--ink-2);font-size:.97rem}
-.band-dark .info p{color:#D9C9B2}
+.band-dark .info p{color:var(--muted-on-dark)}
 
 /* ---- Event card ---- */
 .event{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center}
@@ -197,13 +199,13 @@ p{margin:0}
 .contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px)}
 @media (max-width: 860px){.contact-grid{grid-template-columns:1fr}}
 .ways{display:grid;gap:12px}
-.way{display:flex;gap:14px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:var(--r);background:#FBF8E8;text-decoration:none}
+.way{display:flex;gap:14px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);text-decoration:none}
 .way .ic{width:42px;height:42px;border-radius:12px;background:var(--bg-2);display:grid;place-items:center;flex:none;color:var(--accent-dk)}
 .way .ic svg{width:22px;height:22px}
 .way b{font-family:var(--f-body);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;display:block}
 .way span{color:var(--ink-2);font-size:.93rem;word-break:break-word}
 .copybtn{margin-left:auto;font:inherit;font-size:.8rem;font-weight:700;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);cursor:pointer;flex:none}
-form.order{display:grid;gap:14px;background:#FBF8E8;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+form.order{display:grid;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px}
 .field{display:grid;gap:6px}
 .field label{font-weight:700;font-size:.92rem}
 .field input,.field select,.field textarea{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%;min-width:0}
